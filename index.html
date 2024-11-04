@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리포트 리워드 - 도박 신고 포인트 웹사이트</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset some default styles */
         * {
@@ -62,42 +63,7 @@
             text-decoration: none;
         }
 
-        /* Header styles */
-        header {
-            width: 100%;
-            background-color: #2c2c2c;
-            color: #ffffff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header .site-name {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-        header nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        header nav a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        header .my-report {
-            background-color: #444444;
-            padding: 10px 15px;
-            font-size: 1em;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        /* Slogan section */
+        /* Slogan section with website name and menu */
         .slogan-section {
             text-align: center;
             padding: 80px 20px;
@@ -106,15 +72,31 @@
             width: 100%;
         }
 
-        .slogan-section h1 {
+        .site-name {
             font-size: 2.5em;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .slogan-section p {
-            font-size: 1.2em;
-            color: #ccc;
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .main-menu a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* White separator line */
+        .separator {
+            width: 80%;
+            height: 1px;
+            background-color: #ffffff;
+            margin: 10px auto;
         }
 
         /* Main menu grid */
@@ -142,9 +124,9 @@
             position: relative;
         }
 
-        .menu-item img {
-            width: 40px;
-            height: 40px;
+        .menu-item i {
+            font-size: 1.5em;
+            color: #2c2c2c;
         }
 
         .menu-item div {
@@ -207,53 +189,49 @@
     <a href="#">中文</a>
 </div>
 
-<header>
+<!-- Slogan section with website name and main menu -->
+<div class="slogan-section">
     <div class="site-name">리포트 리워드</div>
-    <nav>
+    <div class="main-menu">
         <a href="#intro">신고포인트제 소개</a>
         <a href="#how-to-use">이용 방법</a>
         <a href="#points-mall">포인트몰 바로가기</a>
         <a href="#report">신고하기</a>
-    </nav>
-    <a href="#my-reports" class="my-report">나의 신고민원</a>
-</header>
-
-<div class="slogan-section">
-    <h1>온라인 도박을 막는 당신의 한 걸음이 세상을 바꿉니다!</h1>
-    <p>정확한 도박 사이트 신고가 가능하고 진행 상황을 쉽게 확인할 수 있습니다.</p>
+    </div>
+    <div class="separator"></div>
 </div>
 
 <div class="menu-grid">
     <div class="menu-item report">
-        <img src="icon-report.png" alt="신고하기 아이콘">
+        <i class="fas fa-exclamation-circle"></i>
         <div>
             <strong>신고하기</strong>
             <span>도박 관련 신고를 접수합니다</span>
         </div>
     </div>
     <div class="menu-item status">
-        <img src="icon-status.png" alt="신고현황 아이콘">
+        <i class="fas fa-tasks"></i>
         <div>
             <strong>신고현황</strong>
             <span>신고 처리 상황을 확인합니다</span>
         </div>
     </div>
     <div class="menu-item mypage">
-        <img src="icon-mypage.png" alt="마이페이지 아이콘">
+        <i class="fas fa-user-circle"></i>
         <div>
             <strong>마이페이지</strong>
             <span>내 신고 내역을 확인합니다</span>
         </div>
     </div>
     <div class="menu-item result">
-        <img src="icon-result.png" alt="처리 결과 아이콘">
+        <i class="fas fa-check-circle"></i>
         <div>
             <strong>처리 결과</strong>
             <span>신고 처리 결과를 확인합니다</span>
         </div>
     </div>
     <div class="menu-item notice">
-        <img src="icon-notice.png" alt="공지사항 아이콘">
+        <i class="fas fa-bullhorn"></i>
         <div>
             <strong>공지사항</strong>
             <span>중요 공지를 확인합니다</span>
