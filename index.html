@@ -178,11 +178,6 @@
             font-size: 1.1em;
         }
 
-        .menu-item span {
-            font-size: 0.85em;
-            color: #666666;
-        }
-
         /* Arrow icon styled */
         .menu-item .arrow-icon {
             font-size: 1.2em;
@@ -192,6 +187,42 @@
 
         .menu-item.report .arrow-icon {
             color: #ffffff; /* White arrow for burgundy background */
+        }
+
+        /* Ranking table styles */
+        .ranking-section {
+            margin-top: 20px;
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ranking-section h2 {
+            font-size: 1.5em;
+            color: #333333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .ranking-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .ranking-table th, .ranking-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .ranking-table th {
+            background-color: #f4f4f4;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -217,9 +248,10 @@
     </div>
     <nav class="menu">
         <a href="#intro">신고포인트제 소개</a>
-        <a href="#how-to-use">이용 방법</a>
-        <a href="#points-mall">포인트몰 바로가기</a>
-        <a href="#report">신고하기</a>
+        <a href="#info">불법도박 안내</a>
+        <a href="#qna">Q&A</a>
+        <a href="#process">처리 절차</a>
+        <a href="#notice">공지사항</a>
     </nav>
     <a href="#login" class="login-button">로그인</a>
 </header>
@@ -242,10 +274,10 @@
         </div>
         <i class="fas fa-arrow-circle-right arrow-icon"></i>
     </a>
-    <a href="#status" class="menu-item status">
+    <a href="#result" class="menu-item result">
         <div>
-            <i class="fas fa-tasks icon"></i>
-            <strong>신고현황</strong>
+            <i class="fas fa-check-circle icon"></i>
+            <strong>처리 결과</strong>
         </div>
         <i class="fas fa-arrow-circle-right arrow-icon"></i>
     </a>
@@ -256,20 +288,46 @@
         </div>
         <i class="fas fa-arrow-circle-right arrow-icon"></i>
     </a>
-    <a href="#result" class="menu-item result">
+    <a href="#points-mall" class="menu-item points-mall">
         <div>
-            <i class="fas fa-check-circle icon"></i>
-            <strong>처리 결과</strong>
+            <i class="fas fa-store icon"></i>
+            <strong>포인트몰 바로가기</strong>
         </div>
         <i class="fas fa-arrow-circle-right arrow-icon"></i>
     </a>
-    <a href="#notice" class="menu-item notice">
+    <a href="#points-info" class="menu-item points-info">
         <div>
-            <i class="fas fa-bullhorn icon"></i>
-            <strong>공지사항</strong>
+            <i class="fas fa-info-circle icon"></i>
+            <strong>포인트 사용 안내</strong>
         </div>
         <i class="fas fa-arrow-circle-right arrow-icon"></i>
     </a>
+</div>
+
+<!-- Ranking section -->
+<div class="ranking-section">
+    <h2>신고 포인트 랭킹</h2>
+    <table class="ranking-table">
+        <thead>
+            <tr>
+                <th>순위</th>
+                <th>아이디</th>
+                <th>포인트 점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>user1234***</td><td>9800</td></tr>
+            <tr><td>2</td><td>player56***</td><td>9400</td></tr>
+            <tr><td>3</td><td>gamerz***</td><td>9000</td></tr>
+            <tr><td>4</td><td>winbig***</td><td>8700</td></tr>
+            <tr><td>5</td><td>jackpot***</td><td>8500</td></tr>
+            <tr><td>6</td><td>lucky7***</td><td>8200</td></tr>
+            <tr><td>7</td><td>bonus8***</td><td>8000</td></tr>
+            <tr><td>8</td><td>profit9***</td><td>7800</td></tr>
+            <tr><td>9</td><td>highscore***</td><td>7600</td></tr>
+            <tr><td>10</td><td>riskfree***</td><td>7400</td></tr>
+        </tbody>
+    </table>
 </div>
 
 </body>
