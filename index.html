@@ -136,15 +136,25 @@
             color: #dddddd;
         }
 
+        /* Main content layout */
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 10px;
+            height: calc(100vh - 160px); /* Adjust height to fit within viewport */
+            overflow: hidden;
+        }
+
         /* Main menu grid */
         .menu-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 10px;
-            max-width: 800px;
             width: 100%;
-            padding: 10px;
         }
 
         /* Menu items */
@@ -177,12 +187,12 @@
 
         /* Ranking section */
         .ranking-section {
-            margin-top: 10px;
             background-color: #ffffff;
             border: 1px solid #ddd;
             padding: 10px;
             font-size: 0.8em;
-            width: 250px;
+            overflow-y: auto;
+            height: 100%;
         }
 
         .ranking-section h2 {
@@ -245,31 +255,34 @@
     <p>포인트로 얻는 가치 있는 변화!</p>
 </div>
 
-<!-- Main menu grid and Ranking section -->
-<div class="menu-grid">
-    <a href="#report" class="menu-item report">
-        <i class="fas fa-exclamation-circle icon"></i>
-        <strong>신고하기</strong>
-        <span>불법 도박 의심 신고를 접수합니다</span>
-    </a>
-    <a href="#result" class="menu-item result">
-        <i class="fas fa-check-circle icon"></i>
-        <strong>처리 결과</strong>
-    </a>
-    <a href="#mypage" class="menu-item mypage">
-        <i class="fas fa-user-circle icon"></i>
-        <strong>마이페이지</strong>
-    </a>
-    <a href="#points-mall" class="menu-item points-mall">
-        <i class="fas fa-store icon"></i>
-        <strong>포인트몰 바로가기</strong>
-    </a>
-    <a href="#points-info" class="menu-item points-info">
-        <i class="fas fa-info-circle icon"></i>
-        <strong>포인트 사용 안내</strong>
-    </a>
+<!-- Main content layout with menu and ranking section -->
+<div class="content">
+    <!-- Main menu grid -->
+    <div class="menu-grid">
+        <a href="#report" class="menu-item report">
+            <i class="fas fa-exclamation-circle icon"></i>
+            <strong>신고하기</strong>
+            <span>불법 도박 의심 신고를 접수합니다</span>
+        </a>
+        <a href="#result" class="menu-item result">
+            <i class="fas fa-check-circle icon"></i>
+            <strong>처리 결과</strong>
+        </a>
+        <a href="#mypage" class="menu-item mypage">
+            <i class="fas fa-user-circle icon"></i>
+            <strong>마이페이지</strong>
+        </a>
+        <a href="#points-mall" class="menu-item points-mall">
+            <i class="fas fa-store icon"></i>
+            <strong>포인트몰 바로가기</strong>
+        </a>
+        <a href="#points-info" class="menu-item points-info">
+            <i class="fas fa-info-circle icon"></i>
+            <strong>포인트 사용 안내</strong>
+        </a>
+    </div>
 
-    <!-- 신고 포인트 랭킹 section next to the main menu -->
+    <!-- 신고 포인트 랭킹 section -->
     <div class="ranking-section">
         <h2>신고 포인트 랭킹</h2>
         <table class="ranking-table">
