@@ -5,64 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>리포트 리워드 - 도박 신고 포인트 웹사이트</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main layout styles */
+        body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f8f9fa;
+            background-color: #f1f4f9;
+            color: #333;
         }
+
+        /* Header styles */
         header {
             width: 100%;
-            background-color: #343a40;
+            background-color: #004085;
             color: #ffffff;
-            padding: 15px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         header .site-name {
             font-size: 1.5em;
             font-weight: bold;
         }
+
         header nav {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
+
         header nav a {
             color: #ffffff;
             text-decoration: none;
             font-size: 1em;
         }
-        .slogan {
-            margin: 40px 0;
-            font-size: 1.8em;
-            font-weight: bold;
-            text-align: center;
+
+        header .my-report {
+            background-color: #17a2b8;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #ffffff;
+            text-decoration: none;
         }
+
+        /* Slogan section */
+        .slogan-section {
+            text-align: center;
+            padding: 50px 20px;
+            color: #333;
+            background-color: #e9ecef;
+            width: 100%;
+        }
+
+        .slogan-section h1 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .slogan-section p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Main menu grid */
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             max-width: 800px;
             width: 100%;
-            padding: 0 20px;
+            padding: 20px;
         }
+
         .menu-item {
             background-color: #ffffff;
-            border: 2px solid #dee2e6;
+            border: 1px solid #ddd;
             padding: 30px;
             text-align: center;
             font-size: 1.2em;
             font-weight: bold;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            color: #004085;
         }
+
         .menu-item:hover {
-            background-color: #e9ecef;
+            background-color: #e2e6ea;
+            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -76,10 +117,12 @@
         <a href="#points-mall">포인트몰 바로가기</a>
         <a href="#report">신고하기</a>
     </nav>
+    <a href="#my-reports" class="my-report">나의 신고민원</a>
 </header>
 
-<div class="slogan">
-    온라인 도박을 막는 당신의 한 걸음이 세상을 바꿉니다!
+<div class="slogan-section">
+    <h1>온라인 도박을 막는 당신의 한 걸음이 세상을 바꿉니다!</h1>
+    <p>정확한 도박 사이트 신고가 가능하고 진행 상황을 쉽게 확인할 수 있습니다.</p>
 </div>
 
 <div class="menu-grid">
