@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리포트 리워드 - 도박 신고 포인트 웹사이트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        header {
+            width: 100%;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .site-name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .slogan {
+            margin: 40px 0;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .menu-item {
+            background-color: #ffffff;
+            border: 2px solid #dee2e6;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .menu-item:hover {
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+
+<header>
+    <div class="site-name">리포트 리워드</div>
+    <nav>
+        <a href="#intro">신고포인트제 소개</a>
+        <a href="#how-to-use">이용 방법</a>
+        <a href="#points-mall">포인트몰 바로가기</a>
+        <a href="#report">신고하기</a>
+    </nav>
+</header>
+
+<div class="slogan">
+    온라인 도박을 막는 당신의 한 걸음이 세상을 바꿉니다!
+</div>
+
+<div class="menu-grid">
+    <div class="menu-item">신고하기</div>
+    <div class="menu-item">신고현황</div>
+    <div class="menu-item">마이페이지</div>
+    <div class="menu-item">처리 결과</div>
+    <div class="menu-item">공지사항</div>
+</div>
+
 </body>
-</html> 
+</html>
