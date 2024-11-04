@@ -19,7 +19,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: #ffffff;
         }
 
@@ -31,7 +31,7 @@
             width: 100%;
             height: 100%;
             background: url('GamblingRouletteWheel--1540x800_1.jpg') no-repeat center center/cover;
-            filter: blur(5px) brightness(0.5);
+            filter: blur(4px) brightness(0.7);
             z-index: -2;
         }
 
@@ -42,7 +42,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
 
@@ -148,9 +148,8 @@
             padding: 40px 20px;
         }
 
-        /* Menu items with specific colors based on gambling color psychology */
+        /* Menu items with a cohesive dark theme color */
         .menu-item {
-            background-color: #333333;
             border: 1px solid #444;
             padding: 30px;
             font-size: 1.2em;
@@ -166,34 +165,34 @@
         }
 
         .menu-item.report {
-            background-color: #b8860b; /* Gold color */
+            background-color: #1e3a56; /* Dark blue tone */
             grid-column: 1 / 2;
             grid-row: 1 / 3;
         }
 
         .menu-item.status {
-            background-color: #8b0000; /* Dark Red */
+            background-color: #a52a2a; /* Dark red tone */
             grid-column: 2 / 3;
             grid-row: 1 / 2;
             justify-content: center;
         }
 
         .menu-item.mypage {
-            background-color: #4682b4; /* Steel Blue */
+            background-color: #2e8b57; /* Dark green tone */
             grid-column: 3 / 4;
             grid-row: 1 / 2;
             justify-content: center;
         }
 
         .menu-item.result {
-            background-color: #556b2f; /* Dark Olive Green */
+            background-color: #8b4513; /* Saddle brown */
             grid-column: 2 / 3;
             grid-row: 2 / 3;
             justify-content: center;
         }
 
         .menu-item.notice {
-            background-color: #696969; /* Dim Gray */
+            background-color: #4b0082; /* Indigo */
             grid-column: 3 / 4;
             grid-row: 2 / 3;
             justify-content: center;
@@ -204,23 +203,11 @@
             color: #ffffff;
         }
 
-        .menu-item div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .menu-item span {
-            font-size: 0.8em;
-            color: #dddddd;
-        }
-
-        .menu-item::after {
-            content: '>';
-            font-size: 1.5em;
+        .menu-item .arrow {
             position: absolute;
             right: 20px;
             color: #ffffff;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -241,7 +228,7 @@
 <!-- Header with site name and navigation -->
 <header>
     <div>
-        <div class="site-name">리포트 리워드</div>
+        <div class="site-name">도박신고 포인트</div>
         <div class="site-name-english">Illegal Online Gambling Report & Reward System</div>
     </div>
     <nav>
@@ -265,22 +252,27 @@
             <strong>신고하기</strong>
             <span>도박 관련 신고를 접수합니다</span>
         </div>
+        <i class="fas fa-arrow-right arrow"></i>
     </div>
     <div class="menu-item status">
         <i class="fas fa-tasks"></i>
         <strong>신고현황</strong>
+        <i class="fas fa-arrow-right arrow"></i>
     </div>
     <div class="menu-item mypage">
         <i class="fas fa-user-circle"></i>
         <strong>마이페이지</strong>
+        <i class="fas fa-arrow-right arrow"></i>
     </div>
     <div class="menu-item result">
         <i class="fas fa-check-circle"></i>
         <strong>처리 결과</strong>
+        <i class="fas fa-arrow-right arrow"></i>
     </div>
     <div class="menu-item notice">
         <i class="fas fa-bullhorn"></i>
         <strong>공지사항</strong>
+        <i class="fas fa-arrow-right arrow"></i>
     </div>
 </div>
 
